@@ -35,6 +35,17 @@ console.log("habitante cadastrado com sucesso")
 }
 
 function requisito2(vet){ //vet aponta para vetor
+    var soma=0
+    var qtde=0
+    for (var i=0;i<vet.lenght;i++){
+        if ((vet[i].olhos== 'C') && (vet[i].altura> 1.60)){
+        soma = soma+ vet[i].idade
+        qtde++
+        }
+    }
+    if (qtde != 0)
+    console.log(`A média é ${soma/qtde}`)
+    else console.log (`Não existe habitante para este cálculo`)
     
 }
 
